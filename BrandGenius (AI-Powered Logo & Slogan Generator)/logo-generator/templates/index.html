@@ -1,0 +1,155 @@
+<!-- START OF MODIFIED index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrandGenius - AI Logo & Slogan Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="background-shapes">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="shape-3"></div>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1><span>Brand</span>Genius</h1>
+        <p class="subtitle">Transform your brand identity with AI-powered creativity</p>
+        <div class="header-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-dot"></div>
+          <div class="decoration-line"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="generator-container">
+      <div class="input-section">
+        <div class="form-group">
+          <label for="prompt"><i class="fas fa-lightbulb"></i> Describe your brand vision:</label>
+          <textarea id="prompt" placeholder="e.g., A premium coffee brand with earthy tones and minimalist design that appeals to young professionals..."></textarea>
+          
+        </div>
+
+        <!-- REMOVED: Color Preference Section -->
+
+        <div class="style-options">
+          <div class="option-group">
+            <label>Style:</label>
+            <select class="style-select">
+              <option value="modern">Modern</option>
+              <option value="minimalist">Minimalist</option>
+              <option value="vintage">Vintage</option>
+              <option value="handmade">Handmade</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="generate-btn" class="btn-primary">
+          <i class="fas fa-magic"></i> Generate Brand Identity
+        </button>
+      </div>
+
+      <div class="loading-section" id="loading-section">
+        <div class="spinner-container">
+          <div class="spinner"></div>
+          <div class="spinner-circle"></div>
+        </div>
+        <p class="loading-text">Crafting your unique brand identity...</p>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="results-section" id="results-section">
+        <div class="section-header">
+          <h2>Your Brand Identity</h2>
+          <p class="section-subtitle">AI-generated options tailored for you</p>
+        </div>
+
+        <div class="results-tabs">
+          <button class="tab-btn active" data-tab="logos">Logos</button>
+          <button class="tab-btn" data-tab="slogans">Slogans</button>
+          <!-- REMOVED: Color Palette Button -->
+        </div>
+
+        <div class="tab-content active" id="logos-tab">
+          <div class="logo-grid" id="logo-grid">
+            <!-- Logos will be inserted here -->
+          </div>
+        </div>
+
+        <div class="tab-content" id="slogans-tab">
+          <div class="slogan-grid" id="slogan-grid">
+            <!-- Slogans will be inserted here -->
+          </div>
+        </div>
+
+        <!-- REMOVED: Color Palette Section -->
+
+        <div class="results-actions">
+          <!-- <button class="btn-secondary" id="save-project">
+            <i class="fas fa-bookmark"></i> Save Project
+          </button> -->
+          <button class="btn-secondary" id="download-all">
+            <i class="fas fa-download"></i> Download All
+          </button>
+          <button class="btn-primary" id="regenerate">
+            <i class="fas fa-sync-alt"></i> Regenerate
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>BrandGenius</h3>
+          <p>AI-powered branding solutions</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a> 
+        </div>
+        <div class="footer-social">
+            <div class="footer-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 BrandGenius. Innovatively designed and developed by Nishant Singh.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+  <script>
+    
+    // TAB switching logic to ensure slogans tab works
+    document.querySelectorAll('.tab-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+        button.classList.add('active');
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(`${tabId}-tab`).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+<!-- END OF MODIFIED index.html -->
