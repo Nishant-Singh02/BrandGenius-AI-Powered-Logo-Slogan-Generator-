@@ -3,6 +3,7 @@
 BrandGenius is an AI-based web app that empowers startups to instantly generate brand identities through custom logos and slogans.
 
 <img width="1811" height="854" alt="image" src="https://github.com/user-attachments/assets/47248aba-37e2-4843-9fd6-d113fd4abdf6" />
+<img width="1263" height="524" alt="image" src="https://github.com/user-attachments/assets/69c4100b-fbdc-469e-a08d-e6eea968866d" />
 <img width="1667" height="861" alt="image" src="https://github.com/user-attachments/assets/170d6a31-b3b3-447f-849e-8c1626afa5af" />
 <img width="1618" height="834" alt="image" src="https://github.com/user-attachments/assets/2ef9120a-3cf8-4bd3-b4cf-b968369c4aa6" />
 
